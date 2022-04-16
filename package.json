@@ -4,15 +4,22 @@
   "description": "React bot for webpage",
   "main": "index.js",
   "engines": {
-    "node":"16.14.0",
-    "npm":"8.3.1"
+    "node": "16.14.0",
+    "npm": "8.3.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "backend": "nodemon index.js"
   },
   "author": "Saliha Apak",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "body-parser": "^1.20.0",
+    "dialogflow": "^1.2.0",
+    "express": "^4.17.3",
+    "pb-util": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
