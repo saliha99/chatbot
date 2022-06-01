@@ -3,7 +3,7 @@ import axios from 'axios/index';
 import Message from './Message';
 
 class Chatbot extends Component {
-
+    messagesEnd;
     constructor(props) {
         super(props);
         this._handleInputKeyPress=this._handleInputKeyPress.bind(this);
@@ -38,7 +38,7 @@ class Chatbot extends Component {
         const res=await axios.post('/api/df_event_query', {event});
         for(let msg of res.data.fulfillmentMessages){
             let says={
-                speaks:'me',
+                speaks:'bot',
                 msg:msg
             }
             this.setState({ messages: [...this.state.messages, says]})
@@ -48,6 +48,11 @@ class Chatbot extends Component {
 
     componentDidMount(){
         this.df_event_query('Welcome');
+    }
+
+    componentDidUpdate(){
+        this.messagesEnd.scrollIntoView({behaviour:"snooth"});
+
     }
 
     renderMessages(stateMessages) {
@@ -69,10 +74,13 @@ class Chatbot extends Component {
 
     render() {
         return(
-            <div style={{height:400, width:400, float:'right'}}>
-                <div id='chatbot' style={{height:'100%',width:'100%',overflow:'auto'}}>
+            <div className='chatbot_container'>
+                <div id='chatbot' >
                     <h2>Chatbot</h2>
                     {this.renderMessages(this.state.messages)}
+                    <div ref={(el)=>{this.messagesEnd=el;}}
+                        style={{float:'left',clear:'both'}}>
+                    </div>
                     <input type="text" onKeyPress={this._handleInputKeyPress} />
                 </div>
             </div>

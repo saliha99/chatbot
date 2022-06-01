@@ -1,0 +1,35 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    margin-bottom: 50px;
+}
+
+.chatbot_container{
+    height: 400px;
+    width: 200%;
+}
+
+#chatbot{
+    height:100%;
+    width:100%;
+    overflow:auto;
+    margin-right: 30px;
+    color: teal;
+}
+
+.covid{
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.desc{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    color:darkgreen
+}
+
+.red {
+    background-color:teal !important;
+}
