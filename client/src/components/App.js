@@ -6,8 +6,8 @@ import Header from './Header';
 import Landing from './pages/Landing';
 import About from './pages/About';
 import Shop from './shop/Shop';
-import Chatbot from './chatbot/Chatbot';
-import Photo from './Photo';
+// import Chatbot from './chatbot/Chatbot';
+// import Photo from './Photo';
 
 // routerları kaldır tek sayfa yapmayı dene!
 const App = () => {
@@ -21,10 +21,10 @@ const App = () => {
                             <Route exact path="about" element={<About />} />
                             <Route exact path="shop" element={<Shop />} />
                         </Routes>
-                        <div className='container'>
+                        {/* <div className='container'>
                             <Chatbot/>
                             <Photo />
-                        </div>
+                        </div> */}
                     
                 </div>
             </BrowserRouter>

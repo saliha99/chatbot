@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-content: center; 
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .chatbot_container{
@@ -32,4 +32,21 @@
 
 .red {
     background-color:teal !important;
+}
+
+.aboutDesc{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    color: darkgreen;
+}
+
+.contactDesc{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    color: darkgreen;
+}
+
+.form{
+    margin-left: 30px;
+    margin-top: 30px;
 }
