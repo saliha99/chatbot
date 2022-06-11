@@ -1,11 +1,17 @@
 import React from 'react';
+import Photo2 from '../Photo2';
+import AboutText from '../AboutText';
 
 const About = () => (
-    <div className='aboutDesc'>
+    <div className='desc2'>
         <h1 style={{ textAlign: 'center' }}>About Us!</h1>
-        <h6 style={{textAlign:'center'}}>Our hospital is at your service with a chatbot that will provide verbal guidance to users with symptoms or self-doubt. 
-        With this Chatbot application, it is aimed to answer your questions and concerns faster and to find solutions, as well as to eliminate your curiosities and fears.
-In case of doubt, simply fill out the patient registration form on our "Contact Us" page. Our hospital will contact you.</h6>
+        <div className='container2'>
+            <AboutText/>
+            <Photo2 />
+        </div>
+        <div class="footer">
+            <p>Created by Saliha Apak for Graduation Project ©2022</p>
+        </div>
     </div>
 )
 

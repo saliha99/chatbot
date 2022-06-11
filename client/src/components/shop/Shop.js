@@ -31,29 +31,9 @@ const Shop = () => (
                 <input type="submit" value="Send"></input> 
             </form>           
         </div>
-        {/* let items={
-                
-        };
-
-        //An array that is opened to hold previously entered values.
-        let output=[];
-
-
-        //Function created to return information after pressing the button.
-        function getInfo(){
-            names = document.getElementById('fname')
-            tel = document.getElementById('tel').value
-            email=document.getElementById('email').value;
-            items.name=name
-            items.tel=tel
-            items.email=email
-            output.push({{names:names,tel:tel,email:email}})
-            console.table(output)
-            document.getElementById("form").reset()
-            return false
-        } */}
-            
-        
+        <div class="footer">
+            <p>Created by Saliha Apak for Graduation Project ©2022</p>
+        </div>
     </div>
 )
 

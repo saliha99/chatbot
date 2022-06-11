@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-content: center; 
-    margin-bottom: 70px;
+    margin-bottom: 150px;
+
 }
 
 .chatbot_container{
@@ -21,23 +22,17 @@
 
 .covid{
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 10px;
 
 }
 .desc{
-    margin-top: 90px;
-    margin-bottom: 50px;
-    color:darkgreen
+    margin-top: 100px;
+    margin-bottom: 80px;
+    color:aliceblue
 }
 
 .red {
     background-color:teal !important;
-}
-
-.aboutDesc{
-    margin-top: 90px;
-    margin-bottom: 50px;
-    color: darkgreen;
 }
 
 .contactDesc{
@@ -50,3 +45,41 @@
     margin-left: 30px;
     margin-top: 30px;
 }
+
+.container2{
+    display: flex;
+    justify-content:first baseline;
+    align-content: center; 
+    margin-bottom: 350px;
+}
+.covid2{
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+
+.desc2{
+    color:teal;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about{
+    color: rgb(15, 25, 26);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h5{
+    color: teal;
+    margin-top: 70px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: teal;
+    text-align: center;
+  }
