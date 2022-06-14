@@ -1,8 +1,6 @@
 import React from 'react';
-//import ItemList from './ItemList';
-//import ReactDOM from 'react-dom/client';
 
-const Shop = () => (
+const Contact = () => (
     <div className='contactDesc'>
         <h3 style={{ textAlign: 'center' }}>Patient's Personal Information</h3>
         <h6 style={{ textAlign: 'center' }}>Fill out the form below which will determine the appointment you need. You will be informed about the developments.</h6>
@@ -37,4 +35,4 @@ const Shop = () => (
     </div>
 )
 
-export default Shop;
+export default Contact;

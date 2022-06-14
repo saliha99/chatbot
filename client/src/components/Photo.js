@@ -13,4 +13,3 @@ const Photo = () => (
 )
 
 export default Photo;
-// style={{marginLeft:AutoInit, marginRight:AutoInit}} img yanından sildim...
